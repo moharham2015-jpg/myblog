@@ -1,0 +1,187 @@
+html, body {
+    padding: 0;
+    margin:0;
+}
+
+body {
+    background-color: aqua;
+    color: darkred;
+    font-family: cursive;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 2000px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: black;
+    padding: 15px 5px;
+    color: white;
+    text-decoration: none;
+    border: 5px ridge;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.btn-mine:hover {
+    color: green;
+    background-color: rgb(203, 193, 193);
+    font-weight: bold;
+    border-color:green;
+
+}
+
+.btn-rubik:hover {
+    color: red;
+    background-color:lightskyblue;
+    font-weight: bold;
+    border-color:red;
+
+}
+
+
+img {
+    border: 10px double red;
+    width: 50%;
+}
+
+header h1 {
+    padding-left: 25px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* some space inside */
+    background-color: rgb(12, 232, 78);
+    
+}
+.contianer2 {
+    border: 5px red ridge;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.columns {
+    background-color: rgb(9, 160, 247);
+    padding: 10px;
+    border: dotted darkblue 3px;
+}
+.columns:hover  {
+    background-color:darkblue;
+    color: white;
+    border: dashed lightcoral 5px;
+    transition-duration: 0.7s;
+    
+    
+}
+
+.columns:hover h3  {
+    color: white;
+    
+    
+    
+}
+.columns h3 {
+    color: green;
+    text-decoration: none;
+    font-size: 150%
+}
+
+.columns-1 {
+    width: 23%;
+}
+.columns-2 {
+    width: 23%;
+}
+.columns-3 {
+    width:23%;
+}
+
+@media (max-width: 500px) {
+    .container {
+        flex-direction:column;
+    }
+    .columns-1,
+    .columns-2,
+    .columns-3 {
+         width: 85.5%;
+         height:auto;
+        
+    }
+
+    .columns {
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 706px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li {
+        margin: 5px 0;
+    }
+}
+
+nav ul {
+    display: flex;         
+    list-style: none;       
+    margin: 0;
+    padding-right: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+nav li {
+    margin-right: 20px;     /* spacing between items */
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(225, 6, 6);
+}
+
+nav a:hover {
+    color: darkgoldenrod;
+}
+
+/*nav ul {
+    margin-left: 5px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    margin:0px;
+    padding: 0px;
+    flex-wrap: nowrap;
+}
+
+nav li {
+    margin: 0 5%;
+}
+
+nav a {
+    color:rgb(225, 6, 6);
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:darkgoldenrod;
+}*/
