@@ -6,7 +6,7 @@ html, body {
 body {
     background-color: #bae6fd; 
     color: #1e293b;       
-    font-family: cursive;
+    font-family: Cascadia code, monospace;
 }
 
 .wrapper {
