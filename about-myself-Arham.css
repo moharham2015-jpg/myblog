@@ -4,8 +4,8 @@ html, body {
 }
 
 body {
-    background-color: aqua;
-    color: darkred;
+    background-color: #bae6fd; 
+    color: #1e293b;       
     font-family: cursive;
 }
 
@@ -57,7 +57,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px; /* some space inside */
-    background-color: rgb(12, 232, 78);
+    background-color: #0ea5e9;
     
 }
 .contianer2 {
@@ -67,20 +67,21 @@ header {
 .container {
     display: flex;
     justify-content: space-between;
+    align-items: start;
     
 }
 
 
 
 .columns {
-    background-color: rgb(9, 160, 247);
-    padding: 10px;
-    border: dotted darkblue 3px;
+    background-color: #e0f2fe; /* light blue */
+    padding: 6px;
+    border: 5px ridge #38bdf8;
 }
 .columns:hover  {
-    background-color:darkblue;
+    background-color: #0369a1; /* DARK blue */
     color: white;
-    border: dashed lightcoral 5px;
+    border: dashed lightgray 5px;
     transition-duration: 0.7s;
     
     
@@ -138,6 +139,10 @@ header {
     nav li {
         margin: 5px 0;
     }
+    header h1 {
+        text-align: center;
+        padding-left: 5px;
+    }
 }
 
 nav ul {
@@ -155,13 +160,21 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: rgb(225, 6, 6);
+    color: #075985;
 }
 
 nav a:hover {
-    color: darkgoldenrod;
+    color: darkblue;
 }
 
+.current-page {
+    border-bottom: 2px solid #075985;
+    padding-bottom: 4px;
+}
+
+.current-page:hover {
+    color: #075985;
+}
 /*nav ul {
     margin-left: 5px;
     list-style: none;
