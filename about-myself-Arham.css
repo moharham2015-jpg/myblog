@@ -6,7 +6,7 @@ html, body {
 body {
     background-color: #bae6fd; 
     color: #1e293b;       
-    font-family: Cascadia code, monospace;
+    font-family:cascadia code, monospace;
 }
 
 .wrapper {
@@ -169,12 +169,21 @@ nav a:hover {
 
 .current-page {
     border-bottom: 2px solid #075985;
-    padding-bottom: 4px;
+    padding-bottom: 1px;
 }
 
 .current-page:hover {
     color: #075985;
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:darkblue;
+    color: white;
+   
+}
+
 /*nav ul {
     margin-left: 5px;
     list-style: none;

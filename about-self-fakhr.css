@@ -1,0 +1,43 @@
+body {
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aquamarine;
+}
+header {
+    padding: 4px;
+    background-color: lightgreen;
+}
+
+img {
+    border: 10px double darkcyan;
+    width: 50%;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 2000px;
+}
+header h1{
+text-align: center;
+}
+nav ul {
+    list-style:none;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav li {
+margin: 0 1rem;
+font-weight: bold;
+}
+
+nav a {
+    color: green;
+    text-decoration: none;
+}
+
+nav a:hover {
+color: darkblue;
+}
+
