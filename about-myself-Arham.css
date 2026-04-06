@@ -78,7 +78,8 @@ header {
     padding: 6px;
     border: 5px ridge #38bdf8;
 }
-.columns:hover  {
+.columns:hover,
+.columns:active {
     background-color: #0369a1; /* DARK blue */
     color: white;
     border: dashed lightgray 5px;
@@ -172,8 +173,7 @@ nav a:hover {
     padding-bottom: 1px;
 }
 
-.current-page:hover, 
-.current-page:active {
+.current-page:hover{
     color: #075985;
 }
       
