@@ -172,10 +172,11 @@ nav a:hover {
     padding-bottom: 1px;
 }
 
-.current-page:hover {
+.current-page:hover, 
+.current-page:active {
     color: #075985;
 }
-
+      
 footer {
     text-align: center;
     padding: 20px;
