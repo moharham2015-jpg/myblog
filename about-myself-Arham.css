@@ -71,25 +71,34 @@ header {
     
 }
 
+/* force :hover styles to apply on touch too */
+.columns:active,
+.columns:hover {
+    background-color: #0369a1; /* dark blue */
+    color: white;
+    border: dashed lightgray 5px;
+    transition-duration: 0.8s;
+}
 
+.columns:active h3,
+.columns:hover h3 {
+    color: white;
+}
 
 .columns {
     background-color: #e0f2fe; /* light blue */
     padding: 6px;
     border: 5px ridge #38bdf8;
 }
-.columns:hover,
-.columns:active {
-    background-color: #0369a1; /* DARK blue */
-    color: white;
-    border: dashed lightgray 5px;
-    transition-duration: 0.7s;
-    
+
+
+.columns h3 {
+    color:green;
 }
 
 .columns:hover h3 {
     color: white;
-}
+}   
 .columns-1 {
     width: 23%;
 }
