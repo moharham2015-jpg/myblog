@@ -85,18 +85,6 @@ header {
     border: dashed lightgray 5px;
     transition-duration: 0.7s;
     
-    
-}
-
-.container a {
-    text-decoration: none;
-    color:#0369a1;
-}
-
-.columns h3 {
-    color: green;
-    text-decoration: none;
-    font-size: 150%
 }
 
 .columns:hover h3 {
