@@ -88,18 +88,20 @@ header {
     
 }
 
-.columns:hover h3  {
-    color: white;
-    
-    
-    
+.container a {
+    text-decoration: none;
+    color:#0369a1;
 }
+
 .columns h3 {
     color: green;
     text-decoration: none;
     font-size: 150%
 }
 
+.columns:hover h3 {
+    color: white;
+}
 .columns-1 {
     width: 23%;
 }
@@ -110,8 +112,9 @@ header {
     width:23%;
 }
 
-@media (max-width: 500px) {
-    .container {
+/*Adjustment for collumns to work on small screens*/
+@media (max-width: 500px) { 
+    .container {                      
         flex-direction:column;
     }
     .columns-1,
@@ -127,7 +130,8 @@ header {
     }
 }
 
-@media (max-width: 706px) {
+/*Adjustment for collumns to only stop when they are finished */
+@media (max-width: 706px) { 
     header {
         flex-direction: column;
         align-items: center;
@@ -145,6 +149,7 @@ header {
         padding-left: 5px;
     }
 }
+
 
 nav ul {
     display: flex;         
