@@ -16,6 +16,10 @@ body {
     max-width: 2000px;
 }
 
+wrapper-flex {
+    display:flex;
+    justify-content: space-between;
+}
 header h1 {
     padding-left: 25px;
 }
@@ -29,6 +33,27 @@ header {
     
 }
 
+.article-title {
+    font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info  {
+    font-size: 0.875rem;
+}
+
+.article-read-more {
+    color:#1792d2;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.article-read-more:hover,
+.article-read-more:focus{
+    color: #143774; 
+    text-decoration: underline;
+
+}
 /*Adjustment for collumns to work on small screens*/
 @media (max-width: 500px) { 
     .container {                      
