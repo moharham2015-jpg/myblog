@@ -1,0 +1,132 @@
+html, body {
+    padding: 0;
+    margin:0;
+}
+
+body {
+    background-color: #bae6fd; 
+    color: #1e293b;       
+    font-family:cascadia code, monospace;
+}
+
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 2000px;
+}
+
+header h1 {
+    padding-left: 25px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* some space inside */
+    background-color: #0ea5e9;
+    
+}
+
+/*Adjustment for collumns to work on small screens*/
+@media (max-width: 500px) { 
+    .container {                      
+        flex-direction:column;
+    }
+    .columns-1,
+    .columns-2,
+    .columns-3 {
+         width: 85.5%;
+         height:auto;
+        
+    }
+
+    .columns {
+        margin-bottom: 5%;
+    }
+}
+
+/*Adjustment for collumns to only stop when they are finished */
+@media (max-width: 706px) { 
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li {
+        margin: 5px 0;
+    }
+    header h1 {
+        text-align: center;
+        padding-left: 5px;
+    }
+}
+
+
+nav ul {
+    display: flex;         
+    list-style: none;       
+    margin: 0;
+    padding-right: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+nav li {
+    margin-right: 20px;     /* spacing between items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #075985;
+}
+
+nav a:hover {
+    color: darkblue;
+}
+
+.current-page {
+    border-bottom: 2px solid #075985;
+    padding-bottom: 1px;
+}
+
+.current-page:hover{
+    color: #075985;
+}
+      
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:darkblue;
+    color: white;
+   
+}
+
+/*nav ul {
+    margin-left: 5px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    margin:0px;
+    padding: 0px;
+    flex-wrap: nowrap;
+}
+
+nav li {
+    margin: 0 5%;
+}
+
+nav a {
+    color:rgb(225, 6, 6);
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:darkgoldenrod;
+}*/
