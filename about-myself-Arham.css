@@ -9,12 +9,20 @@ body {
     font-family:cascadia code, monospace;
 }
 
+img {
+    display :block;
+    max-width: 100px;
+}
 .wrapper {
     width: 90%;
     margin: 0 auto;
     max-width: 2000px;
 }
 
+.wrapper-flex {
+    display: flex;
+    justify-content: space-between;
+}
 .btn {
     display: inline-block;
     background-color: black;
