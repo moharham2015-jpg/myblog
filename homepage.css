@@ -60,8 +60,7 @@ header {
 .article-read-more:focus{
     color: #143774; 
     text-decoration: underline;
-    transform: perspective(1000px) rotateX(4 deg);
-    transition: .9;
+    transition-duration: .9;
 
 
 }
@@ -190,5 +189,44 @@ nav a:hover{
 
 .article-featured {
     border-bottom: #707070 2px solid;
-    padding-bottom: .7em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.article-recent {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-recent-main {
+    order: 1;
+   
+}
+
+.article-recent-secondary {
+    order: 2;
+    margin-top: 20px;
+}
+
+@media (min-width: 675px) {
+    .article-recent {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .article-recent-main {
+        width: 70%;
+    }
+    .article-recent-secondary {
+        width: 25%;
+    }
+}
+
+
+
+.widget-image {
+    margin-bottom: 20px;
+}
+
+.article-read-more {
+    font-size: 1.1rem;
 }
