@@ -13,17 +13,21 @@ img {
     display :block;
     max-width: 100%;
 }
+
 .wrapper {
     width: 90%;
     margin: 0 auto;
     max-width: 2000px;
 }
-
+/*
 .wrapper-flex {
     display: flex;
     justify-content: space-between;
 }
+
+*/
 .btn {
+
     display: inline-block;
     background-color: black;
     padding: 15px 5px;
@@ -118,7 +122,7 @@ header {
 }
 
 /*Adjustment for collumns to work on small screens*/
-@media (max-width: 500px) { 
+@media (max-width: 600px) { 
     .container {                      
         flex-direction:column;
     }
@@ -195,6 +199,8 @@ footer {
    
 }
 
+
+
 /*nav ul {
     margin-left: 5px;
     list-style: none;
@@ -218,3 +224,52 @@ nav a {
 nav a:hover{
     color:darkgoldenrod;
 }*/
+
+/*sidebar*/
+/*
+.sidebar-widget {
+  display: flex;
+  flex-direction: column; 
+  background-color: aliceblue;  
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.widget-recent-posts {
+    border-bottom: grey 2px solid;
+    margin-top: -15px;
+}
+
+.widget-recent-posts:last-child {
+    border:0;
+    margin: 0;
+}
+
+
+.widget-image {
+    margin-bottom: 20px;
+}
+
+.sidebar-widget {
+    border: 10px solid #0ea5e9;
+    padding: 7px;
+}
+
+.widget-title {
+    margin-top: 0px;
+}
+
+@media (min-width: 700px) { 
+    .wrapper-flex {
+        display: flex;
+        justify-content: space-around;
+    }
+    main {
+        width: 75%;
+    }
+    aside {
+        width: 20%;
+    }
+}
+    */
+
