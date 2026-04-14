@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
    <head>
-     <title>about myself</title>
-    <link rel="stylesheet" href="about-myself-Arham.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, intial-scale=1">
+      <title>about myself</title>
+      <link rel="stylesheet" href="about-myself-Arham.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
    </head>
    <body>
  
@@ -14,9 +16,9 @@
             <h1>Muhammad Arham</h1>
          <nav>
                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#" class="current-page">More about me</a></li>
-                  <li><a href="#">recent posts</a></li>
+                  <li><a href="homepage.html">Home</a></li>
+                  <li><a href="index.html" class="current-page">More about me</a></li>
+                  <li><a href="recent-posts.html">recent posts</a></li>
                </ul>
          </nav>
          </header>
@@ -39,7 +41,7 @@
          coding, playing and studing and for PS5 it is play play PLAY.</P>
          
             <h3>What are my hobbies</h3>
-               <div class="container">
+               <div class="container"> <!-- container div for columns-->
             <div class="columns columns-1">
                <h3>Coding - HTML, CSS</h3>
             <P>My hobbies are: coding, gaming, scooting and playing! So lets start with coding. Coding is like giving 
@@ -71,18 +73,37 @@
             </div>
          </div> <!-- container div for columns-->
          </main>
-         
 
-            <p>You can click on one of these to explore 
-               more about my hobbies</p>
-            <a href="https://www.minecraft.net/en-us" class="btn btn-mine" target=" _blank">Minecraft</a>
-            <a href="https://www.rubiks.com/" class="btn btn-rubik" target="_blank">Rubiks cube</a>
-         
-      </div> <!-- wrapper div -->
+         <aside class="sidebar"> <!-- Sidebar  -->
 
-      <footer>
-         <p>Copyright© 2026 Arham. All rights reserved.</p>
-      </footer>
+               <div class="sidebar-widget"> <!-- sidebar 2  -->
+                     <h2 class="widget-title">Recent posts</h2>
+
+               <div class="widget-recent-posts"> <!-- 1st widget inside the sidebar -->
+                  <h3 class="widget-recent-posts-title">School journey</h3>
+                  <img src="Arham-pic.jpg" alt="" class="widget-image">
+               </div>
+
+               <div class="widget-recent-posts"><!-- 2nd widget inside the sidebar -->
+                  <h3 class="widget-recent-posts-title">Football journey</h3>
+                  <img src="Arham-pic.jpg" alt="" class="widget-image">
+               </div>
+            </div><!-- End of sidebar 2  -->
+
+            </aside><!-- End of sidebar  -->
+
+         </div> <!-- wrapper div -->
+
+            <p class="more-info">For more information about 
+            me and my hobbies,you can click on the buttons!</p>
+             <a href="https://www.minecraft.net/en-us" class="btn btn-mine" target="_blank">Minecraft</a> 
+             <a href="https://www.rubiks.com/" class="btn btn-rubik" target="_blank">Rubiks cube</a>
+
+             </div>
+            <footer>
+               <p>Copyright© 2026 Arham. All rights reserved.</p>
+            </footer>
+
 
    </body>
 </html>

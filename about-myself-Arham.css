@@ -7,6 +7,7 @@ body {
     background-color: #bae6fd; 
     color: #1e293b;       
     font-family:cascadia code, monospace;
+    line-height: 1.5;
 }
 
 img {
@@ -196,6 +197,7 @@ footer {
     padding: 20px;
     background-color:darkblue;
     color: white;
+    margin-top: 20px;
    
 }
 
@@ -272,4 +274,61 @@ nav a:hover{
     }
 }
     */
+
+
+@media (min-width: 600px) {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    main {
+        width: 70%;
+    }
+    aside {
+        width: 25%;
+    }
+
+}
+
+/* Sidebar */
+
+
+
+.sidebar {
+    margin-top: 20px;
+}
+
+.sidebar-widget {
+  display: flex;
+  flex-direction: column; 
+  background-color: aliceblue;  
+}
+
+.widget-recent-posts {
+    border-bottom: grey 2px solid;
+    margin-top: -15px;
+}
+
+.widget-recent-posts:last-child {
+    border:0;
+    margin: 0;
+}
+
+
+.widget-image {
+    margin-bottom: 20px;
+}
+
+.sidebar-widget {
+    border: 10px solid #0ea5e9;
+    padding: 7px;
+}
+
+.widget-title {
+    margin-top: 0px;
+}
+
+.sidebar-widget1 {
+    margin-bottom: 20%;
+}
 
