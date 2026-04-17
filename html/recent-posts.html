@@ -4,7 +4,8 @@
       <meta name="charset" content="UTF-8">
       <meta name="viewport" content="width=device-width, intial-scale=1">
         <title>Homepage</title>
-        <link rel="stylesheet" href="homepage&recents.css">
+        <link rel="stylesheet" href="../css/homepage&recents.css">
+        <link rel="stylesheet" href="css/recent-posts.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,27 +16,32 @@
             <h1>Muhammad Arham</h1>
          <nav>
                <ul>
-                  <li><a href="homepage.html" class="current-page">Home</a></li>
+                  <li><a href="homepage.html">Home</a></li>
                   <li><a href="index.html">More about me</a></li>
-                  <li><a href="recent-posts.html">recent posts</a></li>
+                  <li><a href="recent-posts.html" class="current-page">recent posts</a></li>
                </ul>
          </nav>
          </header> 
 
          <div class="wrapper wrapper-flex">
             <main role="main">
-            <article class="article-featured"> <!-- Featured article -->
+           
+            <article class="article-recent"> <!-- 1st Normal article  -->
 
-               <h2 class="article-title">About-me</h2>
-               <img src="Arham-pic.jpg" alt="" class="article-image">
-               <p class="article-body">I am Muhammad Arham, a passionate web developer with a keen interest in creating 
+               <div class="article-recent-main">
+                  <h2 class="article-title">About-me</h2>
+                  
+                  <p class="article-body">I am Muhammad Arham, a passionate web developer with a keen interest in creating 
                   engaging and user-friendly websites. I really like coding! But I like other things too!</p>
-               <p class="article-info">January 15, 2026 | 4 comments </p>
 
+                  <a href="#" class="article-read-more">Continue reading</a>
+               </div>
+               <div class="article-recent-secondary">
+                  <img src="../images/Arham-pic.jpg" alt="" class="article-image">
+                  <p class="article-info">January 15, 2026 | 4 comments </p>
+               </div>
 
-               <a href="#" class="article-read-more">Continue reading</a>
-
-            </article> <!-- End of featured article  -->
+            </article><!-- End of 1st normal article  -->
 
             <article class="article-recent"> <!-- 1st Normal article  -->
 
@@ -49,7 +55,7 @@
                   <a href="#" class="article-read-more">Continue reading</a>
                </div>
                <div class="article-recent-secondary">
-                  <img src="surprise.png" alt="" class="article-image">
+                  <img src="../images/surprise.png" alt="" class="article-image">
                   <p class="article-info">Febuary 23, 2023 | 6 comments </p>
                </div>
 
@@ -66,7 +72,7 @@
                <a href="#" class="article-read-more">Read more</a>
                </div>
                <div class="article-recent-secondary">
-                  <img src="cubing.png" alt="" class="article-image">
+                  <img src="../images/cubing.png" alt="" class="article-image">
                   <p class="article-info">September 13, 2025 | 7 comments </p>
                </div>
 
@@ -84,7 +90,7 @@
                </div>
 
                <div class="article-recent-secondary"> <!-- Secondary content of the article  -->
-                  <img src="Coding.png" alt="" class="article-image">
+                  <img src="../images/Coding.png" alt="" class="article-image">
                   <p class="article-info">June 25, 2026 | 10 comments </p>
                </div>
 
@@ -95,7 +101,7 @@
 
                <div class="sidebar-widget sidebar-widget1"><!-- sidebar  1  -->
                   <h2 class="widget-title">About me</h2>
-                  <img src="Arham-pic.jpg" alt="" class="widget-image">
+                  <img src="../images/Arham-pic.jpg" alt="" class="widget-image">
                   <p class="widget-body">I am Arham and i have alot to tell: coding, school, cube abd so much more!</p>
                </div>
 
@@ -104,12 +110,12 @@
 
                <div class="widget-recent-posts"> <!-- 1st widget inside the sidebar -->
                   <h3 class="widget-recent-posts-title">School journey</h3>
-                  <img src="Arham-pic.jpg" alt="" class="widget-image">
+                  <img src="../images/Arham-pic.jpg" alt="" class="widget-image">
                </div>
 
                <div class="widget-recent-posts"><!-- 2nd widget inside the sidebar -->
                   <h3 class="widget-recent-posts-title">Football journey</h3>
-                  <img src="Arham-pic.jpg" alt="" class="widget-image">
+                  <img src="../images/Arham-pic.jpg" alt="" class="widget-image">
                </div>
             </div><!-- End of sidebar 2  -->
 
