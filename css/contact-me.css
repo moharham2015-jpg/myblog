@@ -6,27 +6,60 @@
 
 }
 
+
+/******************/
+/* intro section */
+/*****************/
+
+.intro {
+    background-image: url(../images/image.png);
+    background-size: 150px;
+    background-color: grey;
+    color: whitesmoke;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-text {
+    order: -1;
+    color: lightgreen;
+    font-weight: 400;
+    font-size: 0.825rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
 h1 {
-    font-size: 2.25rem;
+    order: 0;
+    font-size: 2.6rem;
     font-weight: 300;
+    margin-bottom: 50px;
+    font-weight: bold;
 }
 
 h1 + p {
-    color: red;
-    font-weight: bold;
+    color: whitesmoke;
+    font-size: .9rem;
+    font-weight: 600;
 
+}
+
+/*************************/
+/* main content section */
+/*************************/
+
+.main-content {
+    padding: 8px;
 }
 
 h2 {
     font-size: 1.3125rem;
 }
 
-.top-text {
-    font-size: 0.625rem;
-    font-weight: 900;
-    color: red;
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
+h2 + p {
+    font-size: 15px;
 }
 
 .safety-text {
@@ -37,4 +70,21 @@ h2 {
     letter-spacing: 0.7px;
 }
 
-/* intro section */
+/*******************/
+/* media queries */
+/*****************/
+
+@media (min-width: 600px) {
+    body {
+        font-size: 1.125rem;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2, h2 + p {
+        font-size: 1.75rem;
+    }
+}
+
