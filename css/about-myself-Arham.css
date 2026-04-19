@@ -90,7 +90,8 @@ header {
     background-color: #0369a1; /* dark blue */
     color: white;
     border: dashed lightgray 5px;
-    transition-duration: 0.8s;
+    transition: all 270ms;
+    transform: scale(1.05);
 }
 
 .columns:active h3,
@@ -98,10 +99,13 @@ header {
     color: white;
 }
 
+
 .columns {
     background-color: #e0f2fe; /* light blue */
     padding: 6px;
     border: 5px ridge #38bdf8;
+    transform: scale(1);
+    transition: all 270ms;
 }
 
 
@@ -177,10 +181,14 @@ nav li {
 nav a {
     text-decoration: none;
     color: #075985;
+    transform: scale(1);
+    transition: all 250ms;
 }
 
 nav a:hover {
     color: darkblue;
+    transform: scale(1.1);
+    transition: all 250ms;
 }
 
 .current-page {

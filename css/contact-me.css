@@ -1,8 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
 
 .wrapper {
     margin:0;
     font-family:cascadia code, sans-serif;
     text-align: center;
+
 
 }
 
@@ -13,12 +21,14 @@
 
 .intro {
     background-image: url(../images/image.png);
-    background-size: 150px;
+    background-size: cover;
     background-color: grey;
     color: whitesmoke;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
 }
 
 .top-text {
@@ -29,13 +39,15 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.7px;
+    margin: 0;
+    border-top: 5px orange solid;
 }
 
 h1 {
     order: 0;
     font-size: 2.6rem;
     font-weight: 300;
-    margin-bottom: 50px;
+    margin: 0;
     font-weight: bold;
 }
 
@@ -59,7 +71,7 @@ h2 {
 }
 
 h2 + p {
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .safety-text {
@@ -70,21 +82,94 @@ h2 + p {
     letter-spacing: 0.7px;
 }
 
+.intro,
+.main-content {
+    padding: 0 15px;
+}
+/**********/
+/* Forms */
+/*********/
+.info-colector {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input, .btn {
+    width: 100%;
+    border-radius: 5px;
+}
+
+input {
+    font-family: inherit;
+    margin-bottom: .75em;
+    text-align: inherit;
+    padding: .25em;
+    border-radius: 5px;
+    border: solid black 2px;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+input:focus {
+    transform: scale(1.1);
+    transition: transform 250ms;
+}
+
+.btn {
+    display: inline-block;
+    padding: .35em;
+    font-size: 15px;
+    font-weight: 700;
+    background-image: linear-gradient(to right, red, orange);
+    color: rgba(225, 225, 225, 95%);
+    border: 0;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+.btn:hover, .btn:focus {
+    transform: scale(1.1);
+    transition: transform 250ms;
+
+}
+
+
+
+
 /*******************/
 /* media queries */
 /*****************/
 
 @media (min-width: 600px) {
-    body {
-        font-size: 1.125rem;
+    .wrapper {
+        display: flex;
     }
     
     h1 {
         font-size: 3.5rem;
     }
     
-    h2, h2 + p {
+    h2{
         font-size: 1.75rem;
     }
+    h2 + p {
+        font-size: 17px;
+    }
+    .intro, .main-content {
+        width: 50%;
+        min-height: 100vh;
+    }
+    h1 + p {
+        font-size: 1.125rem;
+    }
+    .main-content {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
+
+
 
