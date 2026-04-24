@@ -168,10 +168,46 @@ nav a:hover {
     transition-duration: .9;
 }
 
+.article-featured,
+.article-recent {
+    margin-bottom: 20px;
+}
+
+.article-recent {
+    background-color: rgb(153, 216, 237);
+    border-radius: 6px;
+    padding-left: 10px;
+    transition: all 300ms;
+    transform: scale(1);
+
+}
+
+.article-recent:hover {
+    transition: all 300ms;
+    transform: scale(1.064);
+    background-color: rgb(123, 208, 236);
+    
+}
+
+.article-image{
+transition:.3s;
+}
+
+.article-recent:hover .article-image{
+transform:scale(1.07);
+}
+
+.article-title {
+    transition: h1 500ms;
+    transform: scale(1);
+}
+
+
 @media (min-width: 675px) {
     .article-recent {
         flex-direction: row-reverse;
         justify-content: space-between;
+        padding-bottom: 10px;
     }
     .article-recent-main {
         width: 70%;
