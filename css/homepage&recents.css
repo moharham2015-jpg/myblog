@@ -158,9 +158,7 @@ nav a:hover {
     color:#075985;
 }
 
-.article-recent:active .article-title {
-    color:#075985;
-}
+
 
 .article-read-more,
 .article-info  {
@@ -196,8 +194,7 @@ nav a:hover {
 }
 
 .article-recent:hover, 
-.article-recent:focus,
-.article-recent:active {
+.article-recent:focus {
     transition: all 300ms;
     transform: scale(1.055);
     background-color: rgb(123, 208, 236);
@@ -210,8 +207,7 @@ nav a:hover {
 }
 
 .article-recent:hover .article-image,
- .article-recent:focus .article-image,
- .article-recent:active .article-image{
+ .article-recent:focus .article-image{
     transform:scale(1.055);
 }
 
@@ -233,11 +229,7 @@ nav a:hover {
     .article-recent-secondary {
         width: 25%;
     }
-    .article-recent:hover,
-    .article-recent:focus,
-    .article-recent:active  {
-        transform: scale(1)
-    }
+
 }
 
 /* Sidebar */
