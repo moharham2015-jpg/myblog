@@ -181,6 +181,10 @@ nav a:hover {
     text-decoration: underline;
     transition-duration: .9;
 }
+.article-recent {
+    -webkit-user-select: none;
+    user-select: none;
+}
 
 .article-featured,
 .article-recent {
