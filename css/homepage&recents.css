@@ -154,51 +154,11 @@ nav a:hover {
     font-size: 1.5rem;
 }
 
-/*
-@media (hover:hover) {
-    .article-recent:hover .article-title {
+.article-recent:hover .article-title {
     color:#075985;
-   }
-   .article-read-more:hover,
-   .article-read-more:focus{
-    color: #143774; 
-    text-decoration: underline;
-    transition-duration: .9;
-   }
-
-    .article-recent:hover, 
-    .article-recent:focus {
-        transition: all 300ms;
-        transform: scale(1.055);
-        background-color: rgb(123, 208, 236);
-        
-    }
-    .article-recent:hover .article-image,
-    .article-recent:focus .article-image{
-        transform:scale(1.055);
-    }
-
-
 }
 
-   .article-recent:active .article-title {
-    color:#075985;
-   }
 
- .article-recent {
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-.article-recent:active  {
-    transition: all 300ms;
-    transform: scale(1.055);
-    background-color: rgb(123, 208, 236);     
-}
-
-.article-recent:active .article-image{
-    transform:scale(1.055);
-}
 
 .article-read-more,
 .article-info  {
@@ -211,47 +171,17 @@ nav a:hover {
     font-weight: 900;
 }
 
-.article-recent:active {
-    transform: scale(1.02); 
+
+.article-read-more:hover,
+.article-read-more:focus{
+    color: #143774; 
+    text-decoration: underline;
+    transition-duration: .9;
 }
-*/
-/* --- IPAD / TOUCH FIX --- */
-
-
-.article-recent:active .article-title {
-    color: #075985;
+.article-recent {
+    -webkit-user-select: none;
+    user-select: none;
 }
-
-
-.article-recent:active {
-    transition: all 100ms; 
-    transform: scale(1.02);
-    background-color: rgb(123, 208, 236);     
-}
-
-
-.article-recent:active .article-image {
-    transform: scale(1.02);
-}
-
-/* --- COMPUTER HOVER --- */
-@media (hover: hover) {
-    .article-recent:hover, 
-    .article-recent:focus {
-        transition: all 300ms;
-        transform: scale(1.055);
-        background-color: rgb(123, 208, 236);
-    }
-
-    .article-recent:hover .article-title {
-        color: #075985;
-    }
-
-    .article-recent:hover .article-image {
-        transform: scale(1.055);
-    }
-}
-
 
 .article-featured,
 .article-recent {
@@ -268,12 +198,23 @@ nav a:hover {
 
 }
 
+.article-recent:hover, 
+.article-recent:focus {
+    transition: all 300ms;
+    transform: scale(1.055);
+    background-color: rgb(123, 208, 236);
+    
+}
 
 .article-image{
     transition: .3s;
     border-radius:10px;
 }
 
+.article-recent:hover .article-image,
+ .article-recent:focus .article-image{
+    transform:scale(1.055);
+}
 
 .article-title {
     transition: color 500ms;
