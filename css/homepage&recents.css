@@ -233,11 +233,7 @@ nav a:hover {
     .article-recent-secondary {
         width: 25%;
     }
-    .article-recent:hover,
-    .article-recent:focus,
-    .article-recent:active  {
-        transform: scale(1)
-    }
+
 }
 
 /* Sidebar */
