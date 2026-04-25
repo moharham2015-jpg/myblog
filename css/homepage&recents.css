@@ -171,6 +171,10 @@ nav a:hover {
     font-weight: 900;
 }
 
+.article-recent:active {
+    transform: scale(1.02); /* smaller so it won't get stuck looking huge */
+}
+
 .article-read-more:hover,
 .article-read-more:focus{
     color: #143774; 
