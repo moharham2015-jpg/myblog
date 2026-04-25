@@ -41,6 +41,7 @@ img {
     border: 5px ridge;
     margin-bottom: 10px;
     margin-right: 10px;
+    transition: all 250ms;
 }
 
 .btn-mine:hover {
@@ -48,6 +49,7 @@ img {
     background-color: rgb(203, 193, 193);
     font-weight: bold;
     border-color:green;
+    transform: scale(1.1);
 
 }
 
@@ -56,9 +58,16 @@ img {
     background-color:lightskyblue;
     font-weight: bold;
     border-color:red;
-
+    transform: scale(1.1);
 }
 
+.btn-contact:hover {
+   background-image: linear-gradient( to right, green, red);
+    color: white;
+    font-weight: bold;
+    border-color:lightskyblue;
+    transform: scale(1.1);
+}
 
 img {
     border: 10px double red;
@@ -131,7 +140,7 @@ header {
 }
 
 /*Adjustment for collumns to work on small screens*/
-@media (max-width: 650px) { 
+@media (max-width: 750px) { 
     .container {                      
         flex-direction:column;
     }
@@ -211,6 +220,11 @@ footer {
     color: white;
     margin-top: 20px;
    
+}
+
+.more-info {
+    margin-left: 5%;
+    margin-top: 10px;
 }
 
 
