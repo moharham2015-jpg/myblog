@@ -178,33 +178,32 @@ nav a:hover {
     text-decoration: underline;
     transition-duration: .9;
 }
-.article-recent {
-    -webkit-user-select: none;
-    user-select: none;
-}
+
 
 .article-featured,
 .article-recent {
     margin-bottom: 20px;
 }
-
+ .article-recent:focus {
+    border: 5px rgb(123, 208, 236) solid;
+}
 .article-recent {
     background-color: rgb(153, 216, 237);
-    border-radius: 10px;
+    border-radius: 20px;
     padding-left: 10px;
     transition: all 300ms;
     transform: scale(1);
     margin-bottom: 8%;
-
+    -webkit-user-select: none;
+    user-select: none;
 }
 
-.article-recent:hover, 
-.article-recent:focus {
+.article-recent:active {
     transition: all 300ms;
     transform: scale(1.055);
     background-color: rgb(123, 208, 236);
-    
 }
+
 
 .article-image{
     transition: .3s;
@@ -235,6 +234,14 @@ nav a:hover {
         width: 25%;
     }
 
+}
+
+@media (hover:hover) {
+    .article-recent:hover {
+        transition: all 300ms;
+        transform: scale(1.055);
+        background-color: rgb(123, 208, 236);
+    }
 }
 
 /* Sidebar */
