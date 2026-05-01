@@ -75,7 +75,7 @@ footer {
     }
 }
 
-@media (min-width: 700px) { 
+@media (min-width: 690px) { 
     .wrapper-flex {
         display: flex;
         justify-content: space-around;
@@ -242,12 +242,28 @@ nav a:hover {
 .sidebar-widget {
   display: flex;
   flex-direction: column; 
-  background-color: aliceblue;  
+  background-color: aliceblue;
 }
 
 .widget-recent-posts {
-    border-bottom: grey 2px solid;
     margin-top: -15px;
+    background-color: rgba(214, 213, 213, 0.514);
+    margin: 5px;
+    padding:5px;
+    border-radius: 10px;
+    color: black;
+    margin-bottom: 20px;
+    transform: scale(1);
+    transition: all ease 250ms;
+
+}
+
+.widget-recent-posts:hover {
+    transform: scale(1.03);
+    transition: all ease 250ms;
+    font-weight: bold;
+    background-color: rgb(195, 194, 194);
+
 }
 
 .widget-recent-posts:last-child {
@@ -258,11 +274,22 @@ nav a:hover {
 
 .widget-image {
     margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .sidebar-widget {
     border: 10px solid #0ea5e9;
     padding: 7px;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: all 250ms;
+}
+
+.sidebar-widget:hover {
+    transform: scale(1.03);
+    transition: all 250ms;
+    background-color: rgba(252, 249, 249, 0.689);
 }
 
 .widget-title {
@@ -270,5 +297,12 @@ nav a:hover {
 }
 
 .sidebar-widget1 {
-    margin-bottom: 20%;
+    margin-bottom: 20px;
+    transform: scale(1);
+    transition: transform 250ms;
 }
+
+.sidebar-widget2 {
+    transition: ease all 250ms;
+}
+

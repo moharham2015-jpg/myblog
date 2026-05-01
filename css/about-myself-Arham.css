@@ -15,7 +15,7 @@ body {
 }
 
 img {
-    display :block;
+    display: block;
     max-width: 100%;
 }
 
@@ -71,7 +71,7 @@ img {
 
 img {
     border: 10px double red;
-    width: 50%;
+    width: 100%;
 }
 
 header h1 {
@@ -97,8 +97,7 @@ header {
     
 }
 
-/* force :hover styles to apply on touch too */
-.columns:active,
+
 .columns:hover {
     background-color: #0369a1; /* dark blue */
     color: white;
@@ -107,7 +106,7 @@ header {
     transform: scale(1.025);
 }
 
-.columns:active h3,
+
 .columns:hover h3 {
     color: white;
 }
@@ -327,7 +326,17 @@ nav a:hover{
 .sidebar-widget {
   display: flex;
   flex-direction: column; 
-  background-color: aliceblue;  
+  background-color: aliceblue; 
+  border-radius: 10px;
+    transform: scale(1);
+    transition: all ease 250ms;
+  
+}
+
+.sidebar-widget:hover {
+    transform: scale(1.05);
+    transition: all ease 250ms;
+
 }
 
 .widget-recent-posts {

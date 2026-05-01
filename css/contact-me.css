@@ -141,6 +141,9 @@ input:focus {
 /* media queries */
 /*****************/
 
+
+
+
 @media (min-width: 600px) {
     .wrapper {
         display: flex;
